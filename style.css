@@ -1,0 +1,156 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    border-bottom: none;
+    border-radius: 12px 12px 0 0 !important;
+    padding: 1rem 1.5rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.list-group-item {
+    border: none;
+    background-color: #f8f9fa;
+    margin-bottom: 8px;
+    border-radius: 8px !important;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+    transform: translateX(5px);
+}
+
+.form-select {
+    border-radius: 8px;
+    padding: 12px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.form-select:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: #86b7fe;
+}
+
+.common-friends-badge {
+    background-color: #198754;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.friend-list .list-group-item i,
+.recommendation-list .list-group-item i {
+    margin-right: 10px;
+    color: #6c757d;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.recommendation-list .list-group-item {
+    animation: slideIn 0.3s ease forwards;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+}
+
+.recommendation-card {
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+.interest-badge {
+    margin: 2px;
+    font-size: 0.8em;
+    transition: all 0.2s;
+}
+
+.interest-badge:hover {
+    transform: scale(1.05);
+}
+
+.profile-section {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.profile-section:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+.recommendations-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.user-interests {
+    margin-top: 10px;
+}
+
+.common-interests {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.toast-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+} 
