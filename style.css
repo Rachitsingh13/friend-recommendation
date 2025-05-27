@@ -1,94 +1,82 @@
 body {
-    background-color: #eef2f7;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    line-height: 1.6;
 }
 
 .main-card {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border: none;
-    margin-bottom: 25px;
-    border-radius: 20px;
-    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 18px;
 }
 
 .card {
     border: none;
-    border-radius: 15px;
+    border-radius: 14px;
     margin-bottom: 20px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.01);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
 }
 
 .card-header {
     border-bottom: none;
-    border-radius: 15px 15px 0 0 !important;
+    border-radius: 14px 14px 0 0 !important;
     padding: 1rem 1.5rem;
-    background-color: #f7f9fc;
-    font-weight: 600;
-    font-size: 1.1rem;
+    background-color: #4facfe;
+    color: white;
 }
 
 .card-body {
     padding: 1.5rem;
+    background-color: #fdfdfd;
 }
 
 .list-group-item {
     border: none;
-    background-color: #f9fbfd;
+    background-color: #f0f4f8;
     margin-bottom: 10px;
     border-radius: 10px !important;
-    padding: 14px 22px;
+    padding: 12px 20px;
     transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
 }
 
 .list-group-item:hover {
-    background-color: #e2e6ea;
-    transform: translateX(5px);
+    background-color: #d9e8fc;
+    transform: translateX(8px);
 }
 
 .form-select {
     border-radius: 10px;
     padding: 12px;
-    border: 2px solid #dee2e6;
+    border: 2px solid #ccddee;
     transition: all 0.3s ease;
-    background-color: #fff;
 }
 
 .form-select:focus {
-    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
-    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(79, 172, 254, 0.25);
+    border-color: #4facfe;
 }
 
 .common-friends-badge {
-    background-color: #28a745;
+    background-color: #ff7eb3;
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.85em;
-    margin-left: auto;
+    margin-left: 10px;
+    display: inline-block;
 }
 
 .friend-list .list-group-item i,
 .recommendation-list .list-group-item i {
     margin-right: 10px;
     color: #6c757d;
-    font-size: 1.2em;
 }
 
 .form-label {
-    font-weight: 600;
-    color: #343a40;
-    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
 }
 
 @keyframes slideIn {
@@ -108,43 +96,42 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px;
+        padding: 10px;
     }
 
     .card-body {
-        padding: 1.25rem;
+        padding: 1rem;
     }
 }
 
 .recommendation-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s;
     margin-bottom: 20px;
-    border-radius: 15px;
+    background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+    color: #333;
 }
 
 .recommendation-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15) !important;
 }
 
 .interest-badge {
-    margin: 3px;
+    margin: 2px;
     font-size: 0.8em;
-    background-color: #d1ecf1;
-    color: #0c5460;
+    background-color: #ffe0ac;
     border-radius: 12px;
     padding: 4px 10px;
-    display: inline-block;
-    transition: transform 0.2s ease;
+    transition: all 0.3s;
 }
 
 .interest-badge:hover {
-    transform: scale(1.08);
-    background-color: #bee5eb;
+    transform: scale(1.1);
+    background-color: #ffc07f;
 }
 
 .profile-section {
-    background-color: #f8f9fa;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
@@ -152,7 +139,7 @@ body {
 }
 
 .profile-section:hover {
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1) !important;
 }
 
 .recommendations-section {
@@ -161,10 +148,14 @@ body {
     padding: 20px;
 }
 
-.user-interests,
+.user-interests {
+    margin-top: 10px;
+}
+
 .common-interests {
     margin-top: 10px;
-    font-size: 0.95em;
+    font-size: 0.9em;
+    color: #4f4f4f;
 }
 
 .toast-notification {
@@ -172,9 +163,9 @@ body {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    background-color: #343a40;
-    color: #fff;
-    padding: 15px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #4facfe;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
